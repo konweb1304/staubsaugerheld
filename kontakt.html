@@ -5,7 +5,7 @@
   <title>Kontakt – Staubsaugerheld</title>
   <style>
     body { font-family: sans-serif; padding: 2rem; background: #f5fff5; color: #222; max-width: 700px; margin: auto; }
-    input, textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; }
+    input, textarea, select { width: 100%; padding: 0.5rem; margin-bottom: 1rem; }
     label { font-weight: bold; }
     button { background: #2e7d32; color: white; padding: 0.5rem 1rem; border: none; cursor: pointer; }
     button:hover { background: #1b5e20; }
@@ -21,6 +21,16 @@
 
     <label for="email">E-Mail:</label>
     <input type="email" name="email" required>
+
+    <label for="phone">Handynummer:</label>
+    <input type="tel" name="phone">
+
+    <label for="interesse">Ich möchte:</label>
+    <select name="interesse" required>
+      <option value="">Bitte auswählen</option>
+      <option value="Staubsauger kennenlernen">Staubsauger kennenlernen</option>
+      <option value="Tätigkeit kennenlernen">Tätigkeit kennenlernen</option>
+    </select>
 
     <label for="message">Nachricht:</label>
     <textarea name="message" rows="5" required></textarea>
