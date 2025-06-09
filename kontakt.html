@@ -1,1 +1,33 @@
-<h1>Kennenlernen</h1><p>Hier wird später ein Formular eingefügt.</p>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt – Staubsaugerheld</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #f5fff5; color: #222; max-width: 700px; margin: auto; }
+    input, textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; }
+    label { font-weight: bold; }
+    button { background: #2e7d32; color: white; padding: 0.5rem 1rem; border: none; cursor: pointer; }
+    button:hover { background: #1b5e20; }
+  </style>
+</head>
+<body>
+  <h1>Kontaktformular</h1>
+  <p>Fülle das Formular aus, um mit mir Kontakt aufzunehmen:</p>
+
+  <form action="https://formspree.io/f/your-id-here" method="POST">
+    <label for="name">Name:</label>
+    <input name="name" required>
+
+    <label for="email">E-Mail:</label>
+    <input type="email" name="email" required>
+
+    <label for="message">Nachricht:</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <button type="submit">Senden</button>
+  </form>
+
+  <p style="font-size: 0.8rem; color: #555;">Mit dem Absenden erklärst du dich einverstanden, dass deine Daten zur Beantwortung gespeichert werden.</p>
+</body>
+</html>
